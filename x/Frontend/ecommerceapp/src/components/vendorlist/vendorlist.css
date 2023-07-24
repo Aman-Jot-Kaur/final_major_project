@@ -1,0 +1,47 @@
+/* vendorlist.css */
+
+/* Container for the profile list */
+.profile-list-container {
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Profile item container */
+.profile-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Profile details */
+.profile-item p {
+  margin: 0;
+}
+
+/* Disable button */
+.profile-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Button for enabled profiles */
+.profile-item button:not([style]) {
+  background-color: #e74c3c;
+}
+
+/* Button for disabled profiles */
+.profile-item button[style*="gray"] {
+  background-color: #7f8c8d;
+}

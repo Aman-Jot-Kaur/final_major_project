@@ -1,0 +1,76 @@
+/* Historyorder.css */
+
+/* Container for the order history */
+.order-history-container {
+  padding: 20px;
+}
+
+/* Back to browsing button */
+.outofstock {
+
+  cursor: pointer;
+}
+
+.outofstock:hover {
+  background-color: #111c2a;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Order item container */
+.order-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Order status buttons */
+.cancel-button,
+.status-pending,
+.status-delivered,
+.status-cancelled {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 10px;
+  font-weight: bold;
+
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  cursor: pointer;
+}
+
+.status-pending {
+  background-color: #f39c12;
+}
+
+.status-delivered {
+  background-color: #2ecc71;
+}
+
+.status-cancelled {
+  background-color: #7f8c8d;
+}
+
+/* Apply status button styles based on the status text */
+.order-item .status-pending {
+  background-color: #f39c12;
+}
+
+.order-item .status-delivered {
+  background-color: #2ecc71;
+}
+
+.order-item .status-cancelled {
+  background-color: #7f8c8d;
+}

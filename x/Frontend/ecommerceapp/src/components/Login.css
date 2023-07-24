@@ -1,0 +1,163 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210609/pngtree-3d-render-online-shopping-with-mobile-and-bag-image_727266.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-right: 30%;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.form-container-form {
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.pass-input {
+    position: relative;
+}
+
+.pass-input input {
+    padding-right: 40px;
+}
+
+.pass-input::after {
+    content: "\f070";
+
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999999;
+}
+
+.sign-button,
+.google-log-button,
+.phone-button,
+.signup-link-button {
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.sign-button {
+    background-color: #009688;
+}
+
+.google-log-button {
+    background-color: #dd4b39;
+}
+
+.phone-button {
+    background-color: #ff9800;
+}
+
+.signup-link-button {
+    background-color: transparent;
+    color: white;
+}
+
+.signup-link-button:hover {
+    text-decoration: underline;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.form-container-form p {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.image-container-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.pass-input::after {
+    /* Remove the content and other styles */
+    content: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999999;
+}
+
+.form-container-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container-form .input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-container-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+}

@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.orders-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 90%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    /* Add flex display */
+    flex-direction: column;
+    /* Set flex-direction to column */
+    flex: 1;
+    /* Take up all available vertical space */
+}
+
+.orders-list {
+    display: flex;
+    /* Change grid to flex */
+    flex-direction: column;
+    /* Set flex-direction to column */
+    align-items: center;
+    /* Center order cards horizontally */
+    flex: 1;
+    /* Take up all available space inside .orders-page */
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.earnings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.earnings-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.earnings-value {
+    font-size: 20px;
+}
+
+.orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.order-card {
+    flex: 0 0 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+}
+
+.order-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.order-details p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.order-label {
+    font-weight: bold;
+}
+
+/* Status Buttons */
+.order-status-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Status Button Styles */
+.order-status-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status-pending {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.status-delivered {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.status-cancelled {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Additional Styles */
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .order-card {
+        flex: 0 0 100%;
+    }
+}
